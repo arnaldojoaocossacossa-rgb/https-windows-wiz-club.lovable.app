@@ -17,7 +17,7 @@ import d6 from "@/assets/depoimento-6.jpg.asset.json";
 import d7 from "@/assets/depoimento-7.jpg.asset.json";
 import d8 from "@/assets/depoimento-8.jpg.asset.json";
 import d9 from "@/assets/depoimento-9.jpg.asset.json";
-
+const depoimentos = [d1.default , d2.default, d3.default, d4.default, d5.default, d6.default, d7.default, d8.default, d9.default];
 const CHECKOUT = "https://pay.tutora.co.mz/57c1df708c90479f996a3107c5b9c78d";
 const WHATSAPP_NUM = "+258 878 115 843";
 const WHATSAPP_LINK = "https://wa.me/258878115843";
@@ -342,8 +342,8 @@ function Index() {
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {depoimentos.map((d, i) => (
                 <img
-                  key={d.url}
-                  src={d.url}
+                  key={i}
+                  src={d}
                   alt={`Depoimento real de aluno do curso no WhatsApp ${i + 1}`}
                   loading="lazy"
                   className="w-full rounded-xl border border-border shadow-card"
