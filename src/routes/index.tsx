@@ -344,7 +344,7 @@ function Index() {
                 <img
           key={i}
           src={depoimento.image}
-          alt={`Depoimento real de aluno do curso no WhatsApp ${i + 1}`}
+          alt={'Depoimento real de aluno do curso no WhatsApp ' + (i + 1)}
           loading="lazy"
           className="w-full rounded-xl border-border shadow-card"
         />
