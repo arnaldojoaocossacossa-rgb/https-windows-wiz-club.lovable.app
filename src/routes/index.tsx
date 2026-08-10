@@ -341,15 +341,15 @@ function Index() {
             </p>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {depoimentos.map((d, i) => (
-                <img
-          key={i}
-          src={depoimento.image}
-          alt={'Depoimento real de aluno do curso no WhatsApp ' + (i + 1)}
-          loading="lazy"
-          className="w-full rounded-xl border-border shadow-card"
-        />
-              ))}
-            </div>
+                {testimonialImages.map((image) => (
+      <img
+        key={image}
+        src={image}
+        alt="Depoimento real de aluno do curso no WhatsApp"
+        loading="lazy"
+        className="w-full rounded-xl border-border shadow-card"
+      />
+    ))}
             <p className="mx-auto mt-12 max-w-2xl text-center text-lg italic text-muted-foreground">
               "Enquanto você fica olhando, muitos jovens e adultos já estão a parar de depender de
               técnicos."
